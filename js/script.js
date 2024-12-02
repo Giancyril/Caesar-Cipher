@@ -46,3 +46,26 @@ function clearInput() {
   document.getElementById("inputText").value = "";  // Clears the input field
   document.getElementById("resultText").value = "";  // Optionally clear the result field
 }
+
+
+// Clipboard copy functionality
+document.getElementById("clipboard").addEventListener("click", copyToClipboard);
+
+function copyToClipboard() {
+  let textArea = document.createElement("textarea");
+  const resultField = document.getElementById("resultText");
+  const resultText = resultField.value;
+
+  if (!resultText) {
+    alert("There is no result to copy!");
+    return;
+  }
+
+  textArea.value = resultText;
+  document.body.appendChild(textArea);
+  textArea.select();
+  document.execCommand("Copy");
+  textArea.remove();
+
+  alert("Caesaris codice copied to clipboard!");
+}
