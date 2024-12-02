@@ -63,7 +63,7 @@ label,
   resize: none; /* Prevent resizing */
 }
 
-/* */
+/*Selecting and Input Fields */
 .panel select {
   border: none;
   border-radius: 3px;
