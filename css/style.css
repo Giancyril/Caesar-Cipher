@@ -10,7 +10,7 @@ body {
 }
 
 #container {
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  background-image: linear-gradient(60deg, #252b32 0%, #476787 100%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;

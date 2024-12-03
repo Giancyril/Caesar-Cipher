@@ -9,11 +9,11 @@
 </head>
 <body>
   <div id="container">
-    <h1>Caesar Cipher</h1>
+    <h1>Caesar Cipher+</h1>
     <div class="panel">
-      <div class="message">Message:</div>
-      <textarea id="inputText" rows="4" placeholder="Type your message here..."></textarea>
-      <label>Shift:</label>
+      <div class="message">Plaintext</div>
+      <textarea id="inputText" rows="4" placeholder="type your message here..."></textarea>
+      <label>Shift</label>
       <div class="row">
         <select name="shifts" id="shift">
           <option value="1">1</option>
@@ -30,10 +30,10 @@
       </div>
       <!-- Result Panel -->
     <div class="result-panel">
-      <div class="message">Result:</div>
-      <textarea id="resultText" rows="4"></textarea>
+      <div class="message">Ciphertext</div>
+      <textarea id="resultText" readonly></textarea>
     </div>
-
+    <!--Buttons-->
     <div class="button-container">    
       <button class="button" onclick="processText(false)">Encrypt</button>
       <button class="button" onclick="processText(true)">Decrypt</button>
