@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+  
   <div id="container">
     <h1>Caesar Cipher+</h1>
     <div class="panel">
@@ -37,12 +38,16 @@
     <div class="button-container">    
       <button class="button" onclick="processText(false)">Encrypt</button>
       <button class="button" onclick="processText(true)">Decrypt</button>
-      <button class="button" id="clipboard">Copy</button>
+
+      <button class="button" id="copy">
+        <i class="far fa-copy"></i>
+      </button>
       <button class="button" onclick="clearInput()">Clear</button>
     </div>
 
     </div>
   </div>
+  <script src='https://kit.fontawesome.com/7a230f0a67.js'></script>
   <script src="./js/script.js"></script>
 </body>
 </html>
