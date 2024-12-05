@@ -67,5 +67,5 @@ function copyToClipboard() {
   document.execCommand("Copy");
   textArea.remove();
 
-  alert("Caesaris codice copied to clipboard!");
+  alert("Copied to clipboard!");
 }
